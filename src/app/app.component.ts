@@ -7,9 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Hello from BridgeLabz';
-  imgURl="https://bridgelabz.com/assets/bridgeLabz_com_logo.jpg";
+  logoUrl: string = 'https://bridgelabz.com/assets/images/bridgelabz_com_logo.jpg';  // Logo image URL
 
-  ngOnInit():void{
-    this.title="Hello from Bridgelabz";
+  // Method to open website in new tab
+  openWebsite(): void {
+    window.open('https://www.bridgelabz.com', '_blank');
   }
 }

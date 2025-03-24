@@ -1,6 +1,14 @@
-<div>
-  <h1>{{this.title}}</h1>
-  <img src="imgURL" alt="logo">
+<div style="text-align: center; margin-top: 50px;">
+  <h1>{{ title }}</h1>
+  
+  <!-- Image with click event binding -->
+  <img 
+    [src]="logoUrl" 
+    alt="BridgeLabz Logo" 
+    width="300" 
+    (click)="openWebsite()" 
+    style="cursor: pointer;" 
+  />
 </div>
 
 <router-outlet></router-outlet>
